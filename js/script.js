@@ -18,7 +18,7 @@ function loadData() {
     var city = $('#city').val();
     /* edit greeting message
     */
-    $greeting.text('You want to live at '+ street + ', ' + city + '?');
+    $greeting.text('So, you want to live at '+ street + ', ' + city + '?');
     /* load Google Streetview
     */
     var mapsUrl = 'https://maps.googleapis.com/maps/api/streetview?size=1200x600&location='+ street + '+' + city;
