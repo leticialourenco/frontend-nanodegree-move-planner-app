@@ -23,7 +23,16 @@ function loadData() {
     */
     var mapsUrl = 'https://maps.googleapis.com/maps/api/streetview?size=1200x600&location='+ street + '+' + city;
     $body.append('<img class="bgimg" src="'+ mapsUrl +'">');
-
+    
+    /* format NYTimes url
+    */
+    var nytUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+    nytUrl += '?' + $.param({
+      'q': city,
+      'sort': 'newest',
+      'api-key': "9da87b6ffbca4e45bd5c6410566eda8a"
+    });
+    
     return false;
 };
 
