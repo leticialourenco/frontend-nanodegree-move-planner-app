@@ -56,7 +56,11 @@ function loadData() {
     /* format Wikipedia url 
     */
     var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + city + '&format=json&callback=wikiCallback';
-    
+    /* manage errors on wikipedia request
+    */
+    var wikiRequestTimeout = setTimeout(function(){
+        $wikiElem.text('Failes to get Wikipedia resources');
+    }, 8000);
 
     return false;
 };
