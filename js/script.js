@@ -53,6 +53,11 @@ function loadData() {
         $nytHeaderElem.text('New York Times Articles could not be loaded');
     });
 
+    /* format Wikipedia url 
+    */
+    var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + city + '&format=json&callback=wikiCallback';
+    
+
     return false;
 };
 
