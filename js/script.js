@@ -61,6 +61,23 @@ function loadData() {
     var wikiRequestTimeout = setTimeout(function(){
         $wikiElem.text('Failes to get Wikipedia resources');
     }, 8000);
+    /* Wikipedia AJAX request 
+    */
+    $.ajax({
+       url: wikiUrl,
+       dataType: "jsonp",
+       //jsonp: "callback",
+       success: function(response) {
+            var articleList = response[1];
+            for(var i=0; i<articleList.length; i++){
+                articleStr = articleList[i];
+                var url = 'http://en.wikipedia.org/wiki/' + articleStr;
+                $wikiElem.append('<li><a href="' + url + '">' + articleStr + '</a></li>');
+            };
+
+            clearTimeout(wikiRequestTimeout);
+       } 
+    });
 
     return false;
 };
