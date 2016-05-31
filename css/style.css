@@ -1,5 +1,10 @@
-* {box-sizing:border-box;}
-body {background-color: #CCC;}
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,200,300,900);
+
+* { box-sizing: border-box; }
+
+body { background-color: #eee; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
 .bgimg {
     position:fixed;
@@ -10,36 +15,90 @@ body {background-color: #CCC;}
     opacity:1;
 }
 
-.greeting {
-    color:black;
-    text-shadow: 1px 1px 3px rgba(255,255,255, .5);
-    text-align: center;
+.header {
+    background: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    padding: 20px;
 }
 
-.wikipedia-container {
-    float:right;
-    width:290px;
-    padding:10px;
-    margin-right: 10px;
-    background-color: rgba(255,255,255,0.7);
-}
-
-.nytimes-container {
-    padding: 10px;
-    margin-right:300px;
-    background-color: rgba(255,255,255,0.7);
-}
-
-.article-list {
+.header h3 {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
     margin: 0;
-    padding: 0;
+    padding: 7px 0 0;
+    color: #333;
+}
+
+.form-container {
+    float: right;
+}
+
+.form-container input,
+.btn-default {
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+}
+
+.btn-default {
+    border-radius: 0;
+    margin-top: -3px;
+    padding: 4px 13px;
+    background: #333;
+    border-color: #333;
+    color: #ccc;
+}
+
+.btn-default:hover {
+    background: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+.content {
+    background: rgba(255,255,255,0.9);
+    padding: 20px 30px 40px;
+    min-height: 160px
+}
+
+.content h3 {
+    letter-spacing: 1px;
+    font-size: 19px;
+    font-weight: 300;
+    color: #aaa;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.article-list,
+.wiki-article-list {
+    list-style: none;
+    margin-left: -40px;
 }
 
 .article {
-    list-style-type: none;
-    padding:10px;
-    border-top: 1px solid #CCC;
+    list-style: none;
+    color: #555;
+    margin-top: 30px;
 }
+
+.article a,
+.wiki-article-list li a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #333;
+}
+
+.wiki-article-list li a {
+    color: #999;
+}
+
 .article:first-child {
-    border-top:none;
+    margin-top: 0;
 }
