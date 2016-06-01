@@ -65,14 +65,21 @@ body { background-color: #eee;
 }
 
 .content h3 {
+    margin-bottom: 30px;
+
+    -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+    transform: rotate(1deg);
+}
+
+.content span {
     letter-spacing: 1px;
-    font-size: 19px;
-    font-weight: 300;
-    color: #aaa;
-    border-bottom: solid 1px #ccc;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #333;
     text-transform: uppercase;
+    padding: 5px 10px;
 }
 
 .article-list,
