@@ -11,3 +11,5 @@ This is a project for Udacity Front-end Nanodegree which utilizes asynchronous A
 * Google Maps API
 * New York Times API
 * Wikipedia API
+
+Run by clicking [here](http://leticialourenco.github.io/neighborhood-news/).
