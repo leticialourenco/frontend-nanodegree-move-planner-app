@@ -69,6 +69,7 @@ function loadData() {
        //jsonp: "callback",
        success: function(response) {
             var articleList = response[1];
+
             for(var i=0; i<articleList.length; i++){
                 articleStr = articleList[i];
                 var url = 'http://en.wikipedia.org/wiki/' + articleStr;
