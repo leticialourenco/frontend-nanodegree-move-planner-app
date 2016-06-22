@@ -37,6 +37,8 @@ body { background-color: #eee;
 
 .form-container input {
 	border: solid 1px #ddd;
+	-webkit-appearance: none;
+	box-shadow: none!important;
 }
 
 .form-container input,
@@ -140,16 +142,12 @@ body { background-color: #eee;
 		background: rgba(255, 255, 255, 1);
 	}
 
-	.content span {
-		font-size: 14px;
-	}
-
 	.loaded {
 		margin-top: 200px;
 	}
 
 	.bgimg {
-		top: 30px;
+		top: 82px;
 	}
 
 	.form-container input, 
