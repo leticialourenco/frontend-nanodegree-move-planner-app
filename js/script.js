@@ -6,6 +6,7 @@ function loadData() {
 	var $nytHeaderElem = $('#nytimes-header');
 	var $nytElem = $('#nytimes-articles');
 	var $greeting = $('#greeting');
+	var $content = $('.content');
 
 	/* clear out old data before new request
 	*/
@@ -73,6 +74,7 @@ function loadData() {
 				$wikiElem.append('<li><a href="' + url + '">' + articleStr + '</a></li>');
 			};
 
+			$content.addClass('loaded');
 			clearTimeout(wikiRequestTimeout);
 	   } 
 	});

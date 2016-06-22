@@ -137,5 +137,14 @@ body { background-color: #eee;
 
 	.content {
 		padding: 20px 10px 40px;
+		background: rgba(255, 255, 255, 1);
+	}
+
+	.content span {
+		font-size: 14px;
+	}
+
+	.loaded {
+		margin-top: 200px;
 	}
 }
