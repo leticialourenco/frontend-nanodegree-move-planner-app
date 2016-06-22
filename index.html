@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Neighborhood News</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Neighborhood News</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-7">
-                    <h3 id="greeting" class="greeting">Where do you want to live?</h3>
-                </div>
-                <div class="col-xs-5">
-                    <form id="form-container" class="form-container">
-                        <input type="text" id="street" value="Street">
-                        <input type="text" id="city" value="City">
-                        <button id="submit-btn" class="btn btn-default">Submit</button>
-                    </form>  
-                </div>
-            </div>   
-        </div>
-    </div>
-    
-    <div class="wrapper">
-        <div class="container">            
-            <div class="row content">
-                <div class="col-xs-6">
-                    <div class="nytimes-container">
-                        <h3><span id="nytimes-header">New York Times Articles</span></h3>
-                        <ul id="nytimes-articles" class="article-list">What's going on in your new city?<br> Enter an address and hit submit and the NY Times will tell you here!</ul>
-                    </div>
-                </div>
+	<div class="wrapper header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h3 id="greeting" class="greeting">Where do you want to live?</h3>
+				</div>
+				<div class="col-md-6">
+					<form id="form-container" class="form-container">
+						<input type="text" id="street" placeholder="Street">
+						<input type="text" id="city" placeholder="City">
+						<button id="submit-btn" class="btn btn-default">Submit</button>
+					</form>  
+				</div>
+			</div>   
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		<div class="container">            
+			<div class="row content">
+				<div class="col-md-6">
+					<div class="nytimes-container">
+						<h3><span id="nytimes-header">Related New York Times Articles</span></h3>
+						<ul id="nytimes-articles" class="article-list">What's going on in your new city?<br> Enter an address and hit submit and the NY Times will tell you here!</ul>
+					</div>
+				</div>
 
-                <div class="col-xs-4 col-xs-offset-2">
-                    <div class="wikipedia-container">
-                        <h3><span id="wikipedia-header">Relevant Wikipedia Links</span></h3>
-                        <ul id="wikipedia-links" class="wiki-article-list">Type in an address above and find relevant<br> Wikipedia articles here!</ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="col-md-4 col-md-offset-2">
+					<div class="wikipedia-container">
+						<h3><span id="wikipedia-header">Relevant Wikipedia Links</span></h3>
+						<ul id="wikipedia-links" class="wiki-article-list">Type in an address above and find relevant<br> Wikipedia articles here!</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <script src="js/libs/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
