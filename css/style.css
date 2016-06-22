@@ -134,4 +134,8 @@ body { background-color: #eee;
 	.header div {
 		padding: 0;
 	}
+
+	.content {
+		padding: 20px 10px 40px;
+	}
 }

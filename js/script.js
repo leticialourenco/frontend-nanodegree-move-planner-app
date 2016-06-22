@@ -35,9 +35,6 @@ function loadData() {
 	/* NYTimes AJAX request
 	*/
 	$.getJSON(nytUrl, function(data){
-		/* format NYTimes articles session title
-		*/
-		$nytHeaderElem.text('New York Times articles about ' + city);
 		/* select the articles on the json and display 'em
 		*/
 		var articles = data.response.docs;
